@@ -1,4 +1,4 @@
-def Student_Grade_System(name, g1, g2, g3) :
+def student_grade_system(name, g1, g2, g3) :
     average = (g1 + g2 + g3) / 3
 
     average = int(average*100) / 100
@@ -7,3 +7,7 @@ def Student_Grade_System(name, g1, g2, g3) :
     else:
         status = "fail"
     return f"Average grade: {average}, Status: {status}"
+if __name__ == "__main__":
+    name = input().strip()
+    grades = list(map(int, input().split()))
+    print(student_grade_system(name, grades))
