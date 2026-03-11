@@ -1,12 +1,7 @@
 def Ticket_Pricing(n: int) -> int:
-    if n < 5:
-        return 0
-    elif n <= 17:
-        return 10
-    elif  n <= 64:
-        return 20
-    else:   # age 65 and above
-        return 15
+   pass
+   return 0 if n < 5 else 10 if n <= 17 else 20 if n <= 64 else 15
+
 if __name__ == '__main__':
     n = int(input())
     print(Ticket_Pricing(n))
