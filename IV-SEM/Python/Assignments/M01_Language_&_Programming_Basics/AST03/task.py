@@ -6,5 +6,4 @@ def Student_Grade_System(name: str, n1: int, n2: int, n3: int) -> str:
         status = "Pass"
     else:
         status = "fail"
-    
     return f"Average grade: {avg}, Status: {status}"

@@ -3,6 +3,7 @@ def reverse_number(n: int) -> int:
     n = abs(n)
     rev = int(str(n)[::-1])
     return sign * rev
+
 if __name__ == "__main__":
     n = int(input())
     print(reverse_number(n))
